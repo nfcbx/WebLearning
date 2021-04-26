@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CSS 使用方法</title>
+</head>
+
+<body>
+
+<div>
+<h2>三种使用 CSS 的方法</h2>
+
+<p>有三种插入样式表的方法：</p>
+
+<ul>
+<li>外部 CSS</li>
+<li>内部 CSS</li>
+<li>行内 CSS</li>
+</ul>
+</div>
+<hr>
+
+
+<div>
+<h2>外部 CSS</h2>
+
+<p>通过使用外部样式表，您只需修改一个文件即可改变整个网站的外观！</p>
+
+<p>每张 HTML 页面必须在 head 部分的 &lt;link&gt; 元素内包含对外部样式表文件的引用。</p>
+
+<h3>实例</h3>
+
+<p>外部样式在 HTML 页面 &lt;head&gt; 部分内的 &lt;link&gt; 元素中进行定义：</p>
+
+<pre>
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;
+</pre>
+<p>外部样式表可以在任何文本编辑器中编写，并且必须以 .css 扩展名保存。</p>
+
+<p>外部 .css 文件不应包含任何 HTML 标签。</p>
+
+<p>&quot;mystyle.css&quot; 是这样的：</p>
+
+<h3>&quot;mystyle.css&quot;</h3>
+
+<pre>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+</pre>
+
+<p class="important"><span>注意：</span>请勿在属性值和单位之间添加空格（例如 <span class="code_marked">margin-left: 20 px;</span>）。正确的写法是：<span class="code_marked">margin-left: 20px;</span></p>
+</div>
+<hr>
+
+
+<div>
+<h2>内部 CSS</h2>
+
+<p>如果一张 HTML 页面拥有唯一的样式，那么可以使用内部样式表。</p>
+
+<p>内部样式是在 head 部分的 &lt;style&gt; 元素中进行定义。</p>
+
+<h3>实例</h3>
+
+<p>内部样式在 HTML 页面的 &lt;head&gt; 部分内的 &lt;style&gt; 元素中进行定义：</p>
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+} 
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<p class="tiy">&nbsp;</p>
+</div>
+<hr>
+
+
+<div>
+<h2>行内 CSS</h2>
+
+<p>行内样式（也称内联样式）可用于为单个元素应用唯一的样式。</p>
+
+<p>如需使用行内样式，请将 style 属性添加到相关元素。style 属性可包含任何 CSS 属性。</p>
+
+<h3>实例</h3>
+
+<p>行内样式在相关元素的 &quot;style&quot; 属性中定义：</p>
+
+<pre>
+&lt;h1 style=&quot;color:blue;text-align:center;&quot;&gt;This is a heading&lt;/h1&gt;
+&lt;p style=&quot;color:red;&quot;&gt;This is a paragraph.&lt;/p&gt;</pre>
+<p class="tip"><span>提示：</span>行内样式失去了样式表的许多优点（通过将内容与呈现混合在一起）。请谨慎使用此方法。</p>
+</div>
+
+
+</body>
+</html>

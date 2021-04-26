@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>实验六</title>
+    <style>
+        body {
+            background-color: rgb(246, 248, 250);
+        }
+    </style>
+</head>
+
+<body>
+
+    <table align="center" style="border:solid thin">
+        <form name="myform" method="get" action="#" enctype="text/plain">
+            <tr>
+                <td>
+                    文本框
+                    <input name="myname" type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    密码框
+                    <input name="mypassword" type="password" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    复选框
+                    <label for="check1"><input id="check1" name="interst" type="checkbox" value="sport" />户外运动</label>
+                    <label for="check2"><input id="check2" name="interst" type="checkbox" value="music" />音乐</label>
+                    <label for="check3"><input id="check3" name="interst" type="checkbox" value="movie" />电影</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    单选按钮
+                    <label for="sex1"><input id="sex1" name="sex" type="radio" value="1" />男</label>
+                    <label for="sex2"><input id="sex2" name="sex" type="radio" value="0" />女</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    标准按钮 <input name="button1" type="button" value="按钮" /> <br>
+                    提交按钮 <input name="button2" type="submit" value="提交" /> <br>
+                    重置按钮 <input name="button3" type="reset" value="重置" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    图像域
+                    <input name="image" type="image" src="img/2014050615385419.jpg" />
+                </td>
+            </tr>
+        </form>
+    </table>
+    <hr>
+    <h3>文本域---text</h3>
+    <p>
+        &nbsp;&nbsp;将&lt;input&gt;标记中的 type 属性值设置为 text，就可以在表单中插入文本框。在此文本框中可以输入任何类型的数据，但输入的数据将以单行显示。其中，name
+        属性用于定义文本框的名称，maxlength 和 size 属性用于指定文本框的宽度和允许用户输入最大的字符数，更多情况下，采用 CSS 设置。value 指定文本框的默认值。
+    </p>
+    <p>
+        &nbsp;&nbsp;pattern 属性规定用于检查&lt;input&gt;元素值的正则表达式。pattern 属性适用于以下输入类型：text、search、url、tel、email、and
+        password。<br>
+    </p>
+
+    <table align="center" style="border:solid thin">
+        <form name="text" action="#" method="get">
+            <tr>
+                <td>
+                    用户名<input type="text" name="username" pattern="^[a-zA-Z0-9_-]{4,16}$" title="4到16位（字母，数字，下划线，减号）" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Q&nbsp;Q号<input type="text" name="QQ" pattern="^[1-9][0-9]{4,10}$" title="4到10位的QQ号" />
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input name="button" type="submit" id="botton" style="margin:auto;" />
+                </td>
+            </tr>
+        </form>
+    </table>
+
+    <hr>
+    <h3>
+        密码框---password
+    </h3>
+    <p>
+        &nbsp;将&lt;input&gt;标记中的type属性值设置为password,就可以在表单中插人密码框，涉及到各属性
+        的含，义与文本框相同。在此密码框中可以输人任何类型的数据，这些数据都将以实心圆点的形式
+        显示，以保护密码的安全，例如:
+    <table align="center">
+        <tr>
+            <td>
+                密码 <input name="password" type="password" />
+            </td>
+        </tr>
+    </table>
+    </p>
+
+    <hr>
+    <h3>
+        复选框---checkbox
+    </h3>
+    <p>
+        &nbsp;&nbsp;复选框允许在一-组选项中选择任意多个选项。将&lt;input&gt;标记中的type属性值设置为
+        checkbox,就可以在表单中插入复选框。通过复选框，用户可以在网页中实现多项选择。例如：
+        <label for="check4"><input name="checkbox" id="check4" type="checkbox" value="photography">摄影</label>
+        <label for="check5"><input name="checkbox" id="check5" type="checkbox" value="Draw">绘画</label>
+    </p>
+
+    <hr>
+    <h3>
+        单选按钮---radio
+    </h3>
+    <p>
+        &nbsp;&nbsp;单选按钮表示互相排斥的选项。在某单选按钮组(由两个或多个同名的按钮组成)中选择一
+        个按钮时，就会取消对该组中其他所有按钮的选择。将&nbsp;input&nbsp;标记中的type属性值设置为radio,
+        就可以在表单中插入一个单选按钮。在选中状态时，按钮中心会有一个实心圆点。例如：
+        <label for="yes"><input name="IsTrue" id="yes" type="radio" value="yes">是</label>
+        <label for="false"><input name="IsTrue" id="false" type="radio" value="false">否</label>
+    </p>
+
+    <hr>
+    <h3>
+        标准按钮---button
+    </h3>
+    <p>
+        &nbsp;&nbsp;将&nbsp;input&nbsp;标记中的type属性值设置为button,就可以在表单
+        中插人标准按钮，例如:
+        <input name="button" type="button" value="确定">
+    </p>
+
+    <hr>
+    <h3>
+        提交/重置按钮---submit/reset
+    </h3>
+
+    <p>
+        &nbsp;&nbsp;将&lt;input&gt;标记中的type属性设置为submit,就可以在表单中插入一个提交按钮。例如：
+        <input name="submit" type="submit" value="提交">
+        <input name="reset" type="reset" value="重置">
+    </p>
+
+    <hr>
+    <h3>
+        图像域---image
+    </h3>
+    <p>
+        &nbsp;&nbsp;用户在浏览网页时，有时会看到某些网站的按钮不是普通样式，而是用一-张图像做的提交或
+        其他类型的按钮，这种效果可以通过插人图像域来实现。将&lt;input&gt;标记中的type 属性值设置为
+        image,就可以在表单中插入图像域，例如：
+        <input name="iamge" type="image" src="/img/2014050615385419.jpg">
+    </p>
+
+    <hr>
+    <h3>
+        文本域输入标记---textarea
+    </h3>
+    <p>
+        &nbsp;&nbsp;有时网页中需要一个多行的文本域， 用来输人更多的文字信息，行间可以换行，并将这些信
+        息作为表单元素的值提交到服务器。例如:
+    <form method="GET" action="#">
+        <textarea name="mytext" rows="5" cols="100"></textarea>
+        <input name="submit" type="submit" value="提交">
+    </form>
+    </p>
+
+    <hr>
+    <h3>
+        按钮---button
+    </h3>
+    <p>
+        &nbsp;&nbsp;&lt;button&gt; 标签定义一个按钮。在 button 元素内部，您可以放置内容，比如文本或图像。这是该元素与使用 input 元素创建的按钮之间的不同之处。
+        &lt;button&gt; 控件 与 &lt;input type="button"&gt; 相比，提供了更为强大的功能和更丰富的内容。&lt;button&gt; 与
+        &lt;/button&gt;标签之间的所有内容都是按钮的内容，其中包括任何可接受的正文内容，比如文本或多媒体内容。
+        例如，我们可以在按钮中包括一个图像和相关的文本，用它们在按钮中创建一个吸引人的标记图像。唯一禁止使用的元素是图像映射，因为它对鼠标和键盘敏感的动作会干扰表单按钮的行为。
+        请始终为按钮规定 type 属性。Internet Explorer 的默认类型是 "button"，而其他浏览器中（包括 W3C 规范）的默认值是 "submit"。
+        例如：<button name="button" onclick="window.alert('HelloWord')">点我！</button>
+    </p>
+
+    <hr>
+    <h3>
+        列表框标记--select
+    </h3>
+    <p>
+        &nbsp;&nbsp; 在HTML文件中，使用列表框标记&lt;select&gt;,同时嵌套列表项标记&lt;option&gt;,可以实现列表框效果。
+        其中，&lt;select 标记用于定义列表框，&lt;option&gt;标记用 于向列表框中添加列表项目。&lt;select&gt;标记中的size属性用于定义列表框的行数，size
+        属性未定义具体值或设置为1时，控件显示为下拉列表效果。如果将size 属性设置为大于1的正整数，控件显示为列表框。
+        例如：<br>请选择品牌：
+    <form method="GET" action="#">
+        <select name="品牌" size="1">
+            <option value="Xiaomi">小米</option>
+            <option value="Huawei">华为</option>
+            <option value="Samsung">三星</option>
+            <option value="Smartisan">锤子</option>
+        </select>
+    </form>
+    </p>
+
+    <hr>
+    <h3>
+        &lt;optgroup&gt;标签
+    </h3>
+    <p>
+        &nbsp;&nbsp; &lt;optgroup&gt;元素用于组合选项。
+        例如：
+        <select>
+            <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German Cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </optgroup>
+        </select>
+    </p>
+
+    <hr>
+    <h3>
+        &lt;fieldset&gt;标签
+    </h3>
+    <p>
+        &nbsp;&nbsp; fieldset 元素可将表单内的相关元素分组。&lt;fieldset&gt; 标签将表单内容的一部分打包，生成一组相关表单的字段。
+        当一组表单元素放到 &lt;fieldset&gt; 标签内时，浏览器会以特殊方式来显示它们，它们可能有特殊的边界、3D 效果，或者甚至可创建一个子表单来处理这些元素。
+        &lt;fieldset&gt; 标签没有必需的或唯一的属性。例如：
+    <form>
+        <fieldset>
+            <legend>健康信息</legend>
+            身高：<input type="text" />
+            体重：<input type="text" />
+        </fieldset>
+    </form>
+    </p>
+
+    <hr>
+    <h3>
+        &lt;datalist&gt;标签
+    </h3>
+    <p>
+        &nbsp;&nbsp; &gt;datalist&gt; 标签定义选项列表。请与 input 元素配合使用该元素，来定义 input 可能的值。
+        datalist 及其选项不会被显示出来，它仅仅是合法的输入值列表。
+        请使用 input 元素的 list 属性来绑定 datalist。
+        例如：
+        <input list="cars" />
+        <datalist id="cars">
+            <option value="BMW">
+            <option value="Ford">
+            <option value="Volvo">
+        </datalist>
+    </p>
+
+    <hr>
+    <h3>
+        &lt;output&gt;标签
+    </h3>
+    <p>
+        &nbsp;&nbsp; <output> 标签定义不同类型的输出，比如脚本的输出。
+            例如：
+            <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+                <input type="range" id="a" value="50">100
+                +<input type="number" id="b" value="50">
+                =<output name="x" for="a b"></output>
+            </form>
+    </p>
+</body>
+
+</html>
