@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title></title>
 
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>CSS 部分属性</title>
+  <style>
+    pre {
+      background-color: #f5f5f5;
+      width: 765px;
+      margin: 15px 0 0 0;
+      padding: 20px;
+      border: 0;
+      border: 1px dotted #785;
+      background: #f5f5f5;
+      line-height: 1.4;
+      font-family: Consolas;
+      overflow-x: auto;
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>用CSS设置文字样式、颜色及背景</h1>
+  <h1>用CSS设置文字样式、颜色及背景</h1>
 
 
-<div id="maincontent">
+  <div id="maincontent">
 
-<h1>CSS 字体样式</h1>
+    <h1>CSS 字体样式</h1>
 
 
 
-<div>
-<h2>字体样式</h2>
+    <div>
+      <h2>字体样式</h2>
 
-<p><span class="code_marked">font-style</span> 属性主要用于指定斜体文本。</p>
+      <p><span class="code_marked">font-style</span> 属性主要用于指定斜体文本。</p>
 
-<p>此属性可设置三个值：</p>
+      <p>此属性可设置三个值：</p>
 
-<ul>
-<li>normal - 文字正常显示</li>
-<li>italic - 文本以斜体显示</li>
-<li>oblique - 文本为"倾斜"（倾斜与斜体非常相似，但支持较少）</li>
-</ul>
+      <ul>
+        <li>normal - 文字正常显示</li>
+        <li>italic - 文本以斜体显示</li>
+        <li>oblique - 文本为"倾斜"（倾斜与斜体非常相似，但支持较少）</li>
+      </ul>
 
-<h3>实例</h3>
+      <h3>实例</h3>
 
-<pre>p.normal {
+      <pre>p.normal {
   font-style: normal;
 }
 
@@ -46,18 +60,18 @@ p.oblique {
 </pre>
 
 
-</div>
+    </div>
 
 
 
-<div>
-<h2>字体粗细</h2>
+    <div>
+      <h2>字体粗细</h2>
 
-<p><span class="code_marked">font-weight</span> 属性指定字体的粗细：</p>
+      <p><span class="code_marked">font-weight</span> 属性指定字体的粗细：</p>
 
-<h3>实例</h3>
+      <h3>实例</h3>
 
-<pre>p.normal {
+      <pre>p.normal {
   font-weight: normal;
 }
 
@@ -67,20 +81,20 @@ p.thick {
 </pre>
 
 
-</div>
+    </div>
 
 
 
-<div>
-<h2>字体变体</h2>
+    <div>
+      <h2>字体变体</h2>
 
-<p><span class="code_marked">font-variant</span> 属性指定是否以 small-caps 字体（小型大写字母）显示文本。</p>
+      <p><span class="code_marked">font-variant</span> 属性指定是否以 small-caps 字体（小型大写字母）显示文本。</p>
 
-<p>在 small-caps 字体中，所有小写字母都将转换为大写字母。但是，转换后的大写字母的字体大小小于文本中原始大写字母的字体大小。</p>
+      <p>在 small-caps 字体中，所有小写字母都将转换为大写字母。但是，转换后的大写字母的字体大小小于文本中原始大写字母的字体大小。</p>
 
-<h3>实例</h3>
+      <h3>实例</h3>
 
-<pre>p.normal {
+      <pre>p.normal {
   font-variant: normal;
 }
 
@@ -89,97 +103,97 @@ p.small {
 }
 </pre>
 
-</div>
+    </div>
 
-</div>
+  </div>
 
 
-<div>
-<h2>CSS 文本颜色</h2>
+  <div>
+    <h2>CSS 文本颜色</h2>
 
-<p>您可以设置文本的颜色：</p>
+    <p>您可以设置文本的颜色：</p>
 
-<h3 style="font-size: 24px; color:tomato">China</h3>
+    <h3 style="font-size: 24px; color:tomato">China</h3>
 
-<p style="color:dodgerblue;">China is a great country!</p>
+    <p style="color:dodgerblue;">China is a great country!</p>
 
-<p style="color:mediumseagreen;">China, officially the People's Republic of China, is a country in East Asia.</p>
+    <p style="color:mediumseagreen;">China, officially the People's Republic of China, is a country in East Asia.</p>
 
-<h3>实例</h3>
+    <h3>实例</h3>
 
-<pre>&lt;h1 style="color:Tomato;"&gt;China&lt;/h1&gt;
+    <pre>&lt;h1 style="color:Tomato;"&gt;China&lt;/h1&gt;
 &lt;p style="color:DodgerBlue;"&gt;China is a great country!&lt;/p&gt;
 &lt;p style="color:MediumSeaGreen;"&gt;China, officially the People's Republic of China...&lt;/p&gt;
 </pre>
 
-</div>
+  </div>
 
-<hr>
-
-
-<div id="maincontent">
-
-<h1>CSS 背景</h1>
+  <hr>
 
 
-<div id="intro">
-<p>CSS 背景属性用于定义元素的背景效果。</p>
-</div>
+  <div id="maincontent">
+
+    <h1>CSS 背景</h1>
 
 
-
-<div style="background:#e1efbb url('/i/photo/mountain.jpg'); background-size:100%;">
-
-<p>在这些章节中，您将学习如下 CSS 背景属性：</p>
-
-<ul>
-<li>background-color</li>
-<li>background-image</li>
-<li>background-repeat</li>
-<li>background-attachment</li>
-<li>background-position</li>
-</ul>
-</div>
+    <div id="intro">
+      <p>CSS 背景属性用于定义元素的背景效果。</p>
+    </div>
 
 
 
-<div>
-<h2>CSS background-color</h2>
+    <div style="background:#e1efbb url('/i/photo/mountain.jpg'); background-size:100%;">
 
-<p><span class="code_marked">background-color</span> 属性指定元素的背景色。</p>
+      <p>在这些章节中，您将学习如下 CSS 背景属性：</p>
 
-<h3>实例</h3>
+      <ul>
+        <li>background-color</li>
+        <li>background-image</li>
+        <li>background-repeat</li>
+        <li>background-attachment</li>
+        <li>background-position</li>
+      </ul>
+    </div>
 
-<p>页面的背景色设置如下：</p>
 
-<pre>body {
+
+    <div>
+      <h2>CSS background-color</h2>
+
+      <p><span class="code_marked">background-color</span> 属性指定元素的背景色。</p>
+
+      <h3>实例</h3>
+
+      <p>页面的背景色设置如下：</p>
+
+      <pre>body {
   background-color: lightblue;
 }
 </pre>
 
 
-<p>通过 CSS，颜色通常由以下方式指定：</p>
+      <p>通过 CSS，颜色通常由以下方式指定：</p>
 
-<ul>
-<li>有效的颜色名称 - 比如 "red"</li>
-<li>十六进制值 - 比如 "#ff0000"</li>
-<li>RGB 值 - 比如 "rgb(255,0,0)"</li>
-</ul>
+      <ul>
+        <li>有效的颜色名称 - 比如 "red"</li>
+        <li>十六进制值 - 比如 "#ff0000"</li>
+        <li>RGB 值 - 比如 "rgb(255,0,0)"</li>
+      </ul>
 
-</div>
+    </div>
 
 
 
-<div>
-<h2>其他元素</h2>
+    <div>
+      <h2>其他元素</h2>
 
-<p>您可以为任何 HTML 元素设置背景颜色：</p>
+      <p>您可以为任何 HTML 元素设置背景颜色：</p>
 
-<h3>实例</h3>
+      <h3>实例</h3>
 
-<p>在这里，&lt;h1&gt;、&lt;p&gt; 和 &lt;div&gt; 元素将拥有不同的背景色：</p>
+      <p>在这里，&lt;h1&gt;、&lt;p&gt; 和 &lt;div&gt; 元素将拥有不同的背景色：</p>
 
-<pre>h1 {
+      <pre>h1 {
   background-color: green;
 }
 
@@ -192,68 +206,72 @@ p {
 }
 </pre>
 
-</div>
+    </div>
 
 
 
-<div>
-<h2>不透明度 / 透明度</h2>
+    <div>
+      <h2>不透明度 / 透明度</h2>
 
-<p>opacity 属性指定元素的不透明度/透明度。取值范围为 0.0 - 1.0。值越低，越透明：</p>
+      <p>opacity 属性指定元素的不透明度/透明度。取值范围为 0.0 - 1.0。值越低，越透明：</p>
 
-<div class="css-25" style="background-color:#4CAF50;opacity:1;">opacity 1</div>
+      <div class="css-25" style="background-color:#4CAF50;opacity:1;">opacity 1</div>
 
-<div class="css-25" style="background-color:#4CAF50;opacity:0.6;">opacity 0.6</div>
+      <div class="css-25" style="background-color:#4CAF50;opacity:0.6;">opacity 0.6</div>
 
-<div class="css-25" style="background-color:#4CAF50;opacity:0.3;">opacity 0.3</div>
+      <div class="css-25" style="background-color:#4CAF50;opacity:0.3;">opacity 0.3</div>
 
-<div class="css-25" style="background-color:#4CAF50;opacity:0.1;">opacity 0.1</div>
+      <div class="css-25" style="background-color:#4CAF50;opacity:0.1;">opacity 0.1</div>
 
-<h3>实例</h3>
+      <h3>实例</h3>
 
-<pre>div {
+      <pre>div {
   background-color: green;
   opacity: 0.3;
 }
 </pre>
 
 
-<p class="important"><span>注意：</span>使用 <span class="code_marked">opacity</span> 属性为元素的背景添加透明度时，其所有子元素都继承相同的透明度。这可能会使完全透明的元素内的文本难以阅读。</p>
-</div>
+      <p class="important"><span>注意：</span>使用 <span class="code_marked">opacity</span>
+        属性为元素的背景添加透明度时，其所有子元素都继承相同的透明度。这可能会使完全透明的元素内的文本难以阅读。</p>
+    </div>
 
 
 
-<div>
-<h2>使用 RGBA 的透明度</h2>
+    <div>
+      <h2>使用 RGBA 的透明度</h2>
 
-<p>如果您不希望对子元素应用不透明度，例如上面的例子，请使用 <em>RGBA</em> 颜色值。下面的例子设置背景色而不是文本的不透明度：</p>
+      <p>如果您不希望对子元素应用不透明度，例如上面的例子，请使用 <em>RGBA</em> 颜色值。下面的例子设置背景色而不是文本的不透明度：</p>
 
-<div class="css-25" style="background:rgb(76, 175, 80);">100% opacity</div>
+      <div class="css-25" style="background:rgb(76, 175, 80);">100% opacity</div>
 
-<div class="css-25" style="background:rgba(76, 175, 80,0.6);">60% opacity</div>
+      <div class="css-25" style="background:rgba(76, 175, 80,0.6);">60% opacity</div>
 
-<div class="css-25" style="background:rgba(76, 175, 80,0.3);">30% opacity</div>
+      <div class="css-25" style="background:rgba(76, 175, 80,0.3);">30% opacity</div>
 
-<div class="css-25" style="background:rgba(76, 175, 80,0.1);">10% opacity</div>
+      <div class="css-25" style="background:rgba(76, 175, 80,0.1);">10% opacity</div>
 
-<p>您从我们的 <a href="" title="">CSS 颜色</a> 章节中学到了可以将 RGB 用作颜色值。除 RGB 外，还可以将 RGB 颜色值与 <em>alpha</em> 通道一起使用（RGB<em>A</em>） - 该通道指定颜色的不透明度。</p>
+      <p>您从我们的 <a href="" title="">CSS 颜色</a> 章节中学到了可以将 RGB 用作颜色值。除 RGB 外，还可以将 RGB 颜色值与 <em>alpha</em>
+        通道一起使用（RGB<em>A</em>） - 该通道指定颜色的不透明度。</p>
 
-<p>RGBA 颜色值指定为：rgba(<i>red</i>, <i>green</i>, <i>blue</i>, <i>alpha</i>)。<i>alpha</i> 参数是介于 0.0（完全透明）和 1.0（完全不透明）之间的数字。</p>
+      <p>RGBA 颜色值指定为：rgba(<i>red</i>, <i>green</i>, <i>blue</i>, <i>alpha</i>)。<i>alpha</i> 参数是介于 0.0（完全透明）和
+        1.0（完全不透明）之间的数字。</p>
 
-<p class="tip"><span>提示：</span>您可在我们的 <a href="" title="">CSS 颜色</a> 一章中学到有关 RGBA 颜色的更多知识。</p>
+      <p class="tip"><span>提示：</span>您可在我们的 <a href="" title="">CSS 颜色</a> 一章中学到有关 RGBA 颜色的更多知识。</p>
 
-<h3>实例</h3>
+      <h3>实例</h3>
 
-<pre>div {
+      <pre>div {
   background: rgba(0, 128, 0, 0.3) /* 30% 不透明度的绿色背景 */
 }
 </pre>
 
-</div>
+    </div>
 
 
-</div>
+  </div>
 
 
 </body>
+
 </html>
