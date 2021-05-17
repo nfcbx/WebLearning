@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+        pre {
+            background-color: #f5f5f5;
+            width: 765px;
+            margin: 15px 0 0 0;
+            padding: 20px;
+            border: 0;
+            border: 1px dotted #785;
+            background: #f5f5f5;
+            line-height: 1.4;
+            font-family: Consolas;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="maincontent">
+
+<h1>CSS 组合器</h1>
+
+
+<div>
+
+<p>组合器是解释选择器之间关系的某种机制。</p>
+
+<p>CSS 选择器可以包含多个简单选择器。在简单选择器之间，我们可以包含一个组合器。</p>
+
+<p>CSS 中有四种不同的组合器：</p>
+
+<ul>
+<li>后代选择器 (空格)</li>
+<li>子选择器 (<span class="code_marked">&gt;</span>)</li>
+<li>相邻兄弟选择器 (<span class="code_marked">+</span>)</li>
+<li>通用兄弟选择器 (<span class="code_marked">~</span>)</li>
+</ul>
+</div>
+
+
+
+<div>
+<h2>后代选择器</h2>
+
+<p>后代选择器匹配属于指定元素后代的所有元素。</p>
+
+<p>下面的例子选择 &lt;div&gt; 元素内的所有 &lt;p&gt; 元素：</p>
+
+<h3>实例</h3>
+
+<pre>div p {
+  background-color: yellow;
+}
+</pre>
+
+</div>
+
+
+
+<div>
+<h2>子选择器</h2>
+
+<p>子选择器匹配属于指定元素子元素的所有元素。</p>
+
+<p>下面的例子选择属于 &lt;div&gt; 元素子元素的所有 &lt;p&gt; 元素：</p>
+
+<h3>实例</h3>
+
+<pre>div &gt; p {
+  background-color: yellow;
+}
+</pre>
+
+</div>
+
+
+
+<div>
+<h2>相邻兄弟选择器</h2>
+
+<p>相邻兄弟选择器匹配所有作为指定元素的相邻同级的元素。</p>
+
+<p>兄弟（同级）元素必须具有相同的父元素，"相邻"的意思是"紧随其后"。</p>
+
+<p>下面的例子选择紧随 &lt;div&gt; 元素之后的所有 &lt;p&gt; 元素：</p>
+
+<h3>实例</h3>
+
+<pre>div + p {
+  background-color: yellow;
+}
+</pre>
+
+</div>
+
+
+
+<div>
+<h2>通用兄弟选择器</h2>
+
+<p>通用兄弟选择器匹配属于指定元素的同级元素的所有元素。</p>
+
+<p>下面的例子选择属于 &lt;div&gt; 元素的同级元素的所有 &lt;p&gt; 元素：</p>
+
+<h3>实例</h3>
+
+<pre>div ~ p {
+  background-color: yellow;
+}
+</pre>
+
+</div>
+
+
+
+<div>
+<h2>所有 CSS 组合选择器</h2>
+
+<table class="dataintable">
+<tbody><tr>
+<th>选择器</th>
+<th>示例</th>
+<th>示例描述</th>
+</tr>
+
+<tr>
+<td><a href="/cssref/selector_element_element.asp" title="CSS element element 选择器"><i>element</i> <i>element</i></a></td>
+<td>div p</td>
+<td>选择 &lt;div&gt; 元素内的所有 &lt;p&gt; 元素。</td>
+</tr>
+
+<tr>
+<td><a href="/cssref/selector_element_gt.asp" title="CSS element>element 选择器"><i>element</i>&gt;<i>element</i></a></td>
+<td>div &gt; p</td>
+<td>选择其父元素是 &lt;div&gt; 元素的所有 &lt;p&gt; 元素。</td>
+</tr>
+
+<tr>
+<td><a href="/cssref/selector_element_plus.asp" title="CSS element+element 选择器"><i>element</i>+<i>element</i></a></td>
+<td>div + p</td>
+<td>选择所有紧随 &lt;div&gt; 元素之后的 &lt;p&gt; 元素。</td>
+</tr>
+
+<tr>
+<td><a href="/cssref/selector_gen_sibling.asp" title="CSS element1~element2 选择器"><i>element1</i>~<i>element2</i></a></td>
+<td>p ~ ul</td>
+<td>选择前面有 &lt;p&gt; 元素的每个 &lt;ul&gt; 元素。</td>
+</tr>
+</tbody></table>
+</div>
+
+</div>
+
+</body>
+</html>
