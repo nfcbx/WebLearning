@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+div.sticky
+{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	padding: 5px;
+	background-color:#0CF;
+	border: 2px solid #996;
+}
+.flex-container
+{
+	display: -webkit-flex;
+	display: flex;
+	width: 400px;
+	height: 250px;
+	background-color:#999;
+	-webkit-flex-wrap: wrap;
+}
+.flex-item
+{
+	background-color:cornflowerblue;
+	width: 100px;
+	height:100px;
+	margin:10px;
+}
+.tt
+{
+	text-align:center;
+}
+.flex-container1
+{
+	display: -webkit-flex;
+	display: flex;
+	width: 400px;
+	height: 250px;
+	background-color:#999;
+	-webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+</style>
+<title>布局</title>
+</head>
+<body>
+<h1>
+	<p>CSS布局-position属性、单列布局和两列布局</p>
+</h1>
+<div class="sticky">
+<div class="tt">
+我是粘性元素
+</div>
+</div>
+<h2>
+	position属性规定应用于元素的定位方法的类型，有五个不同的位置值
+</h2>
+<h3>
+	<ol>
+    	<li>static</li>
+        <li>relative</li>
+        <li>fixed</li>
+        <li>absolute</li>
+        <li>sticky</li>
+    </ol>
+</h3>
+<p>
+元素其实是使用 top、bottom、left 和 right 属性定位的。但是，除非首先设置了 position 属性，否则这些属性将不起作用。根据不同的 position 值，它们的工作方式也不同。
+</p>
+
+<div class="flex-container">
+<div class="flex-item">弹性子元素1</div>
+<div class="flex-item">弹性子元素2</div>
+<div class="flex-item">弹性子元素3</div>
+<div class="flex-item">弹性子元素4</div>
+<div class="flex-item">弹性子元素5</div>
+<div class="flex-item">弹性子元素6</div>
+</div>
+<p></p>
+<div class="flex-container1">
+<div class="flex-item">弹性子元素1</div>
+<div class="flex-item">弹性子元素2</div>
+<div class="flex-item">弹性子元素3</div>
+<div class="flex-item">弹性子元素4</div>
+<div class="flex-item">弹性子元素5</div>
+<div class="flex-item">弹性子元素6</div>
+</div>
+</body>
+</html>
